@@ -24,7 +24,7 @@ function Home() {
             asperiores, consectetur magni.
           </p>
           <div className="text-center text-lg-start">
-            <a href="#" className="botao">Entre em contato!</a>
+            <a href="https://web.whatsapp.com/" className="botao">Entre em contato!</a>
           </div>
         </div>
 

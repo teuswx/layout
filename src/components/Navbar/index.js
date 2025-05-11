@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-white fixed-top px-4">
       <div className="container-fluid">
         <NavLink to="/" className="navbar-brand">
-          <img className="logo" src="/logo.png"></img>
+          <img className="logo" src="/logo.png"alt="Logo"></img>
         </NavLink>
         <button
           className="navbar-toggler"
