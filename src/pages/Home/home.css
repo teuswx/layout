@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+header{
+    font-family: "Inter", sans-serif;
+}
+
+
+section{
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 50px;
+     
+}
+
+/* === Container dos Cards === */
+.card {
+  position: relative;
+  padding: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #D9A86C;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform-origin: center;
+  z-index: 1;
+}
+
+.card:hover {
+  background-color: #D9A86C;
+  transform: scale(1.05);
+  border: none;
+  color: white;
+  z-index: 10;
+}
+
+.card:hover .texto {
+  display: none;
+}
+
+.card:hover .texto-oculto {
+  display: block;
+}
+
+.texto-oculto {
+  display: none;
+}
+
+.botao {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: solid 2px #D9A86C;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  transform: translateZ(0);
+  will-change: transform;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.botao:hover {
+  background-color: #D9A86C;
+  border: none;
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.whats {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9999;         /* <- Garante que fique por cima de tudo */
+
+}
+
+.whats img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.whats img:hover {
+  transform: scale(1.08);
+}
+
+/* === BALÃO FIXO COM SETINHA === */
+.whats-tooltip {
+  position: absolute;
+  bottom: 70px; /* sobe o balão acima do ícone */
+  background-color: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: none;
+}
+
+/* Aparece no hover */
+.whats:hover .whats-tooltip {
+  display: block;
+  animation: fadeInUp 0.3s ease;
+  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
