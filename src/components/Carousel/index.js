@@ -15,7 +15,7 @@ function Carousel() {
     }, []);
 
     return (
-        <div className="container mt-5">
+        <div className="container ">
             <div
                 id="ads"
                 className="carousel slide "

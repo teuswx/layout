@@ -8,32 +8,24 @@ import { useEffect } from "react";
 
 function Home() {
 
-  useEffect(() => {
+  useEffect(()=>{
     AOS.init({ duration: 1500 });
-  }, [])
+  },[])
 
   return (
     <div className="container container-lg" style={{ marginTop: "150px" }}>
       <div className="row align-items-center" style={{ minHeight: "400px" }}>
         <div className="col-12 col-lg-6 text-center text-lg-start" data-aos="fade-right" >
-          <div className="rol">
-            <div className="col"></div>
-            <h2 style={{ letterSpacing: '10px' }}>Você achou a melhor</h2>
-            <h2 style={{ fontSize: '70px' }}>Pousada de Santo Hilário!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sed optio quis nulla natus,
-              dolore tempora? Ex sed perspiciatis, dolor voluptatibus nihil nesciunt nobis consequatur enim dolorum
-              asperiores, consectetur magni.
-            </p>
+          <h2 style={{ letterSpacing: '10px' }}>Você achou a melhor</h2>
+          <h2 style={{ fontSize: '70px' }}>Pousada de Santo Hilário!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sed optio quis nulla natus,
+            dolore tempora? Ex sed perspiciatis, dolor voluptatibus nihil nesciunt nobis consequatur enim dolorum
+            asperiores, consectetur magni.
+          </p>
+          <div className="text-center text-lg-start " style={{height: '80px'}}>
+            <a href="https://web.whatsapp.com/" className="botao">Entre em contato!</a>
           </div>
-          <div className="row " style={{ height: '80px'}}>
-            <div className="col d-flex  align-items-center " style={{ height: '100%' }}>
-              <a href="https://web.whatsapp.com/" className="botao text-center">
-                Entre em contato!
-              </a>
-            </div>
-          </div>
-
         </div>
 
         <div className="col-12 col-lg-6 " data-aos="fade-left">
@@ -41,7 +33,7 @@ function Home() {
         </div>
       </div>
 
-      {/* VANTAGENS */}
+       {/* VANTAGENS */}
       <div className="row">
         <div className="col">
           <section style={{ minHeight: "500px" }}>
