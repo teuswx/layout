@@ -29,43 +29,6 @@ section h2{
      
 }
 
-/* === Container dos Cards === */
-.card {
-  position: relative;
-  padding: 20px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #D9A86C;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform-origin: center;
-  z-index: 1;
-}
-
-.card:hover {
-  background-color: #D9A86C;
-  transform: scale(1.05);
-  border: none;
-  color: white;
-  z-index: 10;
-}
-
-.card:hover .texto {
-  display: none;
-}
-
-.card:hover .texto-oculto {
-  display: block;
-}
-
-.texto-oculto {
-  display: none;
-}
 
 .botao {
   padding: 10px 20px;

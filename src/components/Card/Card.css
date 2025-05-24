@@ -1,0 +1,51 @@
+.card {
+  position: relative;
+  padding: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #D9A86C;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform-origin: center;
+  z-index: 1;
+  overflow: hidden; /* importante para esconder o conteúdo que sair do box */
+}
+
+.card:hover {
+  background-color: #D9A86C;
+  transform: scale(1.05);
+  border: none;
+  color: white;
+  z-index: 10;
+}
+
+.card:hover .texto {
+  display: none;
+}
+
+/* Ajuste para a imagem ocupar todo o card e aparecer no hover */
+.texto-oculto {
+  display: none;
+  position: absolute; /* para cobrir todo o card */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.card:hover .texto-oculto {
+  display: block;
+}
+
+.texto-oculto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* preenche o container cortando o excesso */
+}
