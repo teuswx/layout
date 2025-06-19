@@ -6,13 +6,13 @@ import whatsapp from '../../assets/redesSociais/whatsapp.png';
 
 function Footer() {
     return (
-        <footer className="py-4 text-white">
+        <footer className="py-4 mt-5 text-white">
             <div className="container">
                 <div className="row">
 
                     <div className="col-12 col-md-3 mb-4">
-                        <h3>MRstudio</h3>
-                        <p>Texto exemplo</p>
+                        <h3>Villa Capetinga</h3>
+                        <p>Siga-nos nas redes sociais:</p>
                         <div className="d-flex gap-3 redes-sociais">
                             <img src={instagram} alt="Instagram" width="30" />
                             <img src={linkedin} alt="LinkedIn" width="30" />

@@ -9,6 +9,35 @@ header{
     font-family: "Inter", sans-serif;
 }
 
+.teste {
+  position:absolute; /* Para a imagem ficar fixada na tela */
+  top: 280vh; /* Ajusta a distância do topo */
+  right: -20px; /* Ajusta a distância da direita */
+  z-index: -1; /* Coloca a imagem atrás de outros elementos */
+  width: 230px; /* Defina o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  transform: rotate(45deg);
+}
+.teste2{
+  position:absolute; /* Para a imagem ficar fixada na tela */
+  top: 212vh; /* Ajusta a distância do topo */
+  left: -8px; /* Ajusta a distância da direita */
+  z-index: -1; /* Coloca a imagem atrás de outros elementos */
+  width: 230px; /* Defina o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  transform: rotate(45deg);
+}
+
+.teste3{
+  position:absolute; /* Para a imagem ficar fixada na tela */
+  top: 165vh; /* Ajusta a distância do topo */
+  right: -20px; /* Ajusta a distância da direita */
+  z-index: -1; /* Coloca a imagem atrás de outros elementos */
+  width: 290px; /* Defina o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  transform: rotate(10deg);
+}
+
 
 section{
     display: inline-block;
