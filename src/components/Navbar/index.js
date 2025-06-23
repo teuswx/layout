@@ -3,7 +3,7 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top px-3 px-lg-5">
+    <nav className="navbar navbar-expand-lg bg-white shadow-sm fixed-top px-3 px-lg-5">
       <div className="container-fluid">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <img className="logo me-2" src="/logo.png" alt="Logo" />

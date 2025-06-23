@@ -1,64 +1,72 @@
+/* ==========================
+   FONTE E BASE GERAL
+========================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body, html {
   overflow-x: hidden;
 }
 
+header {
+  font-family: "Inter", sans-serif;
+}
 
-header{
-    font-family: "Inter", sans-serif;
+/* ==========================
+   ELEMENTOS DECORATIVOS FIXOS
+========================== */
+.teste,
+.teste2,
+.teste3 {
+  position: absolute;
+  z-index: -1;
+  height: auto;
 }
 
 .teste {
-  position:absolute; /* Para a imagem ficar fixada na tela */
-  top: 280vh; /* Ajusta a distância do topo */
-  right: -20px; /* Ajusta a distância da direita */
-  z-index: -1; /* Coloca a imagem atrás de outros elementos */
-  width: 230px; /* Defina o tamanho da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  transform: rotate(45deg);
-}
-.teste2{
-  position:absolute; /* Para a imagem ficar fixada na tela */
-  top: 212vh; /* Ajusta a distância do topo */
-  left: -8px; /* Ajusta a distância da direita */
-  z-index: -1; /* Coloca a imagem atrás de outros elementos */
-  width: 230px; /* Defina o tamanho da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
+  top: 350vh;
+  right: -20px;
+  width: 230px;
   transform: rotate(45deg);
 }
 
-.teste3{
-  position:absolute; /* Para a imagem ficar fixada na tela */
-  top: 165vh; /* Ajusta a distância do topo */
-  right: -20px; /* Ajusta a distância da direita */
-  z-index: -1; /* Coloca a imagem atrás de outros elementos */
-  width: 290px; /* Defina o tamanho da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
+.teste2 {
+  top: 448vh;
+  left: -15px;
+  width: 230px;
+  transform: rotate(45deg);
+}
+
+.teste3 {
+  top: 170vh;
+  right: -50px;
+  width: 350px;
   transform: rotate(10deg);
 }
 
 
-section{
-    display: inline-block;
-    /* border: 1px solid black; */
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5%;
-    width: 90%;
-    text-align: center;
+/* ==========================
+   SESSÕES GERAIS
+========================== */
+section {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+  width: 90%;
+  text-align: center;
 }
 
-section h2{
-    width: 100%;
-    font-size: 50px;
-    margin: 0;
-    font-weight: bold;
-    padding-bottom: 50px;
-     
+section h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 50px;
 }
 
-
+/* ==========================
+   BOTÃO PERSONALIZADO
+========================== */
 .botao {
   padding: 10px 20px;
   border: solid 2px #D9A86C;
@@ -80,7 +88,9 @@ section h2{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-
+/* ==========================
+   BOTÃO WHATSAPP FIXO
+========================== */
 .whats {
   position: fixed;
   bottom: 40px;
@@ -89,8 +99,7 @@ section h2{
   align-items: center;
   justify-content: center;
   text-align: center;
-  z-index: 9999;         /* <- Garante que fique por cima de tudo */
-
+  z-index: 9999;
 }
 
 .whats img {
@@ -102,10 +111,9 @@ section h2{
   transform: scale(1.08);
 }
 
-/* === BALÃO FIXO COM SETINHA === */
 .whats-tooltip {
   position: absolute;
-  bottom: 70px; /* sobe o balão acima do ícone */
+  bottom: 70px;
   background-color: #25D366;
   color: white;
   padding: 8px 12px;
@@ -117,11 +125,9 @@ section h2{
   display: none;
 }
 
-/* Aparece no hover */
 .whats:hover .whats-tooltip {
   display: block;
   animation: fadeInUp 0.3s ease;
-  
 }
 
 @keyframes fadeInUp {
@@ -134,4 +140,128 @@ section h2{
     transform: translateY(0);
   }
 }
+
+/* ==========================
+   SEÇÃO DESTAQUES
+========================== */
+#featured-container {
+  margin-bottom: 4em;
+}
+
+.title {
+  font-size: 1.75em;
+  margin-bottom: 0.4em;
+  position: relative;
+}
+
+.title:before {
+  width: 75px;
+  border-top: 4px solid #7a7a7a;
+  content: '';
+  position: absolute;
+  bottom: 2em;
+}
+
+#featured-images {
+  margin-top: 2em;
+}
+
+#featured-images .col-md-4 {
+  position: relative;
+  cursor: pointer;
+}
+
+#featured-images .col-md-4:hover > .banner-content {
+  opacity: 0.8;
+}
+
+#featured-images .banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+/* ==========================
+   SEÇÃO INFO
+========================== */
+#info-content {
+  margin-bottom: 4em;
+  padding: 4em 1em;
+}
+
+#info-numbers {
+  margin: 1.5em 0;
+}
+
+#info-banner {
+  align-items: center;
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+#info-numbers h3 {
+  font-size: 3em;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+@media (min-width: 768px) {
+  #info-content {
+    padding: 3.5em;
+  }
+
+  .title {
+    font-size: 2.4em;
+  }
+
+  .title:before {
+    bottom: 1.5em;
+  }
+
+  #featured-images .banner-content {
+    opacity: 0;
+  }
+
+  .teste1,.teste2,.teste3{
+    display: none;
+  }
+}
+
+/* INFO */
+#info-content {
+  margin-bottom: 4em;
+  padding: 4em 1em;
+}
+
+#info-numbers {
+  margin: 1.5em 0;
+}
+
+#info-banner {
+  align-items: center;
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+#info-numbers h3 {
+  font-size: 3em;
+}
+
+@media (min-width: 768px) {
+  #info-content {
+    padding: 3.5em;
+  }
+}
+
+
 
